@@ -1,0 +1,95 @@
+/**********
+Style Sheet for CNIT 132
+Created by: Josh Klaus
+Email: jklaus1@mail.ccsf.edu
+**********/
+
+body {
+    background-image: url(img/background.jpg); 
+    background-size: cover;   
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3{
+	margin: 0;
+	color: black;
+}
+
+#container {
+    width: 700px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#header {
+    background-color: #5D8C00;   
+    border: 2px solid darkblue;  
+    text-align: center;    
+}
+
+
+#content {
+    padding: 5px;
+}
+
+#nav{
+	background-color: #bfffa9;
+	width: 130px;
+	float: left;
+	padding: 10px;
+}
+
+
+#nav a{
+	text-decoration: none;   
+	color: #703b00;
+}
+
+#nav ul{
+	list-style-type: none;
+	padding: 0;  
+}
+
+#nav  a:hover, #nav a:active
+{
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#nav .selected{
+	font-weight: bold;
+}
+
+#main{
+	background-color: #6de1dd;
+	color: black;
+	width: 500px;
+	float: right;
+	padding: 10px;
+}
+
+#main a{
+	text-decoration: none;
+	color: #700000;
+}
+
+
+#footer{
+    float: left;
+	clear: both;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	text-align: center;
+}
+
+footer a{
+	text-decoration: none;   
+	color: yellow;
+}
+
+.left{
+	float: left;
+	margin-right: 5px;
+}
+
