@@ -6,7 +6,6 @@ Email: jklaus1@mail.ccsf.edu
 
 body {
     background-image: url(img/background.jpg); 
-    background-size: cover;   
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -23,7 +22,6 @@ h1, h2, h3{
 
 #header {
     background-color: #5D8C00;   
-    border: 2px solid darkblue;  
     text-align: center;    
 }
 
@@ -53,7 +51,7 @@ h1, h2, h3{
 #nav  a:hover, #nav a:active
 {
 	color: #FFFFFF;
-	background-color: rgba(0,0,0,0.5);
+	background-color: #706e79;
 }
 
 #nav .selected{
@@ -70,7 +68,7 @@ h1, h2, h3{
 
 #main a{
 	text-decoration: none;
-	color: #700000;
+	color: #ab0000;
 }
 
 
@@ -79,13 +77,13 @@ h1, h2, h3{
 	clear: both;
 	width: 100%;
 	padding: 10px;
-	color: white;
+	color: #000000;
 	text-align: center;
 }
 
 footer a{
 	text-decoration: none;   
-	color: yellow;
+	color: #a50000;
 }
 
 .left{

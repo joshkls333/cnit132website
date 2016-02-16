@@ -44,8 +44,8 @@ h1, h2, h3{
 
 #nav  a:hover, #nav a:active
 {
-	color: #FFFFFF;
-	background-color: rgba(0,0,0,0.5);
+	color: #ffffff;
+	background-color: #706e79;
 }
 
 #nav .selected{
@@ -60,3 +60,9 @@ h1, h2, h3{
 	padding: 10px;
 	text-align: center;
 }
+
+footer a{
+	text-decoration: none;   
+	color: #ff0000;
+}
+
