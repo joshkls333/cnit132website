@@ -1,0 +1,177 @@
+body {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-image: url(img/linkstylebackground2.jpg); 
+    text-align:center; /* Hack for IE/Win */ 
+}
+
+#content{
+	width: 900px;
+	margin: 0px auto; 
+	padding: 15px;  
+    text-align: left; /* Counteract to IE/Win Hack */
+	border:2px solid #fff;
+	background-color:#ecf4eb; 
+}    
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 100px; 
+        
+}
+#mainNav li {
+	float: left;
+	width: 9em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+	border: 1px solid #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url(home.png) no-repeat 5px 52%;
+}
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+h1 {
+	color: #fff;
+	margin-left: 200px;
+	margin-right: 200px;
+	background: #000; 
+	font: 25pt; 
+	font-family: garamond; 
+	text-align: center;}
+
+h2 {
+	color: #000; 
+	font: 25pt; 
+	font-family: garamond; 
+	text-align: center;}
+
+.center {text-align: center;}
+
+
+#div1 {
+	background-color: #dbd5e6; 
+	font: 14pt Arial; 
+	margin-left: 100px; 
+	margin-right: 100px;
+	text-align: justify;
+	border-style: solid;
+	line-height: 18pt;
+	font-weight: bold; 
+	padding: 1em; 
+	border-color: #8d0046; 
+	width: 600px;}
+
+
+#div2 {
+	margin-left: 100px; 
+	margin-right: 100px; 
+	background-color: #dbd5e6; 
+	text-align: justify; 
+	font: 12pt futura medium; 
+	line-height: 16pt; 
+	font-weight: bold; 
+	border-style: solid; 
+	padding: 1em; 
+	border-color: #8d0046; 
+	width: 600px;}
+	
+#content2{
+	width:800px;
+	margin: 0px auto; 
+	padding: 15px;
+    text-align: left; /* Counteract to IE/Win Hack */
+	border:2px solid #00a600;
+	background-color:#f6f998;
+}  
+
+
+#nav{
+	background-color: #daf9ff;
+	width: 600px;
+	padding: 10px;
+	padding: 1em;  
+}
+
+
+#nav a{
+	text-decoration: none;   
+	color: #703b00;
+}
+
+#nav ul{
+	list-style-type: none;
+	padding: 0;  
+}
+
+#nav  a:hover, #nav a:active
+{
+	color: #FFFFFF;
+	background-color: #706e79;
+}
+
+
+#div3 {
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;   
+	background-color: #daf9ff; 
+	font: 12pt futura medium; 
+	line-height: 16pt; 
+	font-weight: bold; 
+	border-style: double;
+	padding: 2em;
+	border-color: #353e3b; 
+	width: 700px;
+}
+	
+.right {
+	text-align: right;
+	color: #000;
+}
+
+.right a{
+	text-decoration: none;
+	color: #cc0000;
+}	
+	
+#footer{
+
+    float: left;
+	overflow: auto;
+	width: 100%;
+	padding: 10px;
+	color: #000000;
+	text-align: center;
+}
+

@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Embedded Style Sheet Example</title>
+
+<style>
+
+body {
+     background-color: #95CDA3;
+     text-align:center; /* Hack for IE/Win */ 
+     margin-top: 10px;
+     }
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+     
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 100px; 
+}
+
+#mainNav li {
+	float: left;
+	width: 9em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+       
+	border: 1px solid #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url(home.png) no-repeat 5px 52%;
+}
+
+
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+
+
+.content {
+	width:950px;
+
+	margin: 0px auto; padding: 10px;
+        text-align: left; /* Counteract to IE/Win Hack */
+	
+	background-color:#eee;
+         }    
+
+
+
+.pol { 
+	 text-align: center;
+         font-size: 24px;
+	   }
+
+
+h1 {
+
+font:  28pt "Copperplate Light";
+color: #32bc25;
+text-align: left;
+}
+
+
+h2 {
+
+font:  30pt Genome;
+color: #b300b1;
+text-align: left;
+}
+
+
+h3 {
+
+font-family: Baskerville;
+font-size: 24pt;
+color: #0000ff;
+text-align: right;
+}
+
+h4 {
+
+font-family: OldEnglish;
+font-size: 14pt;
+color: #ff00ff;
+text-align: center;
+}
+
+
+p.left  {
+
+font-family: menlo;
+font-size: 15pt; 
+color: #d21470;
+text-align: center;
+font-weight: bold;
+text-indent: 2.4in;
+}
+
+
+p.right  {
+
+font-family: optima;
+font-size: 15pt; 
+color: #000000;
+text-align: right;
+background-color: #dae1ff;
+border-style: double;
+border-color: #6bb700;
+padding: 2px 5px 2px 5px;
+}
+
+p.ital  {
+
+font-family: 'Century Schoolbook';
+font-size: 18pt;
+color: #ff9331;
+text-align: justify;
+font-weight: bold;
+font-style: italic;
+}
+
+p.new  {
+
+font-family: 'Futura Medium';
+font-size: 23pt;
+color: #2d593a;
+text-align: left;
+font-weight: bold;
+background-color: #ffff00;
+border-style: groove;
+border-color: #0000d2;
+}
+
+a {
+
+color: #0000ff; 
+text-decoration: none;
+}
+
+a:hover { color:#8f0052;
+text-decoration: underline;
+background-color: yellow;
+}
+
+.center {text-align: center;}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="content">
+
+<section>
+
+
+
+  <ul id="mainNav">
+
+    <li><a href="embedded.html" target="_self" id="homeLink">Embedded Style Sheet</a></li>
+    <li><a href="linked1.html" target="_self">Linked Style Sheet 1</a></li>
+    <li><a href="linked2.html" target="_self">Linked Style Sheet 2</a></li>
+    <li><a href="fullcascade.html" target="_self" >Extra Credit A</a></li>
+	<li><a href="xtracss3B.html" target="_self" >Extra Credit B</a></li>
+
+    
+  </ul>
+
+
+
+<br>
+
+<h1>Embedded Style Sheet Example</h1>
+
+
+<p class="pol">The politics of the 21st century</p>
+
+<h2>Lefties and Righties</h2>
+
+
+<p class="left">
+
+Socialists are to the left of liberals.
+ Most liberals are Democrats, although some have
+wandered over to the Green party. Republicans are right-wingers. 
+Most Republicans are 
+conservative. What does conservative mean? Do they want to
+conserve the environment? Do they want to conserve the 2nd amendment?
+Do they want to conserve a woman's right to choose an abortion?
+ Do they want to conserve a separation between church and state?
+
+<a href="http://www.microsoft.com">Click here</a>
+for Bill Gates.</p>
+
+
+<h3>San Francisco Giants</h3>
+
+<p class="right">
+
+It may just be that the Giants have seen the last of Hunter Pence this season, and what a 
+loss it has been. Pence is not only the offensive catalyst, but his presence both on the 
+field and in the clubhouse is immense. Right now, the right fielder has been relegated to 
+the dugout, and that may not change any time soon. The Giants were two games behind the 
+first-place Dodgers in the National League West entering the games of Aug. 20, when Pence 
+was placed on the disabled list because of a strained left oblique. 
+They went into action on Wednesday night 8 1/2 games behind Los Angeles.
+<a href="http://www.sfgiants.com">Click here</a> for your 
+San Francisco Giants!
+</p>
+
+<h4>Terrell Davis</h4>
+
+<p class="ital">
+Davis might be the greatest postseason player at his position in the Super Bowl era. He 
+rushed for at least 100 yards in seven postseason games, including Super Bowls XXXII and 
+XXXIII, and the Broncos won all seven of those games. His 157 yards rushing against the 
+Packers in Super Bowl XXXII earned him the game's MVP honors. His career postseason 
+rushing average was 142.5 yards per game, the highest among any back with at least 
+five playoff games. -- Jeff Legwold</p>
+
+<p class="new">
+The Warriors came away with their most impressive win of the season on Monday night, earning 
+a 120-90 victory over the visiting San Antonio Spurs. Stephen Curry was absolutely scintillating, 
+scoring a game-high 37 points before sitting out the entirety of the fourth quarter. 
+Draymond Green stuffed the stat sheet with 11 points, nine rebounds and six assists, while Shaun 
+Livingston, Brandon Rush and Marreese Speights all scored in double figures off the bench. With the 
+victory, the Warriors improve to 41-4 on the season.
+
+In what was deemed to be perhaps the most anticipated regular season matchup in NBA history, 
+the game didn’t quite follow the script most expected, as the Warriors generated an early lead, 
+and rode that all the way to a blowout victory.
+</p>
+
+</section>
+
+</div>
+
+<footer>
+
+<p class="center">
+ 
+<a href="http://validator.w3.org/check?uri=referer">
+<img style="border:0;width:88px;height:31px" src="img/HTML5.gif"
+alt="HTML5"></a>
+
+
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!">
+    </a>
+</p>
+     
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+body {
+/* 	background-color: linear-gradient(#ff9900,#000066); */
+ 	background: orange; 
+ 	background: -webkit-linear-gradient(orange,blue); 
+ 	background: -o-linear-gradient(orange,blue); 
+ 	background: -moz-linear-gradient(orange,blue); 
+ 	background: linear-gradient(orange,blue); 
+	color: #000000;
+}
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 100px; 
+        
+}
+#mainNav li {
+	float: left;
+	width: 9em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+	border: 1px solid #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url(home.png) no-repeat 5px 52%;
+}
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+
+#content {
+	width:900px;
+	margin: 0px auto; 
+	padding: 15px;
+    text-align: left; /* Counteract to IE/Win Hack */
+	border: solid;
+	background-color:#fff;  
+}
+
+h2 {
+	background-color: #ff9900;
+	font: 24pt Helvetica;
+	color: #000;
+	text-align: center;
+	margin: 0px auto; 
+	text-transform: uppercase;
+	line-height: 30pt;
+	width: 250px;
+	border: double;
+	border-color: #0000CC;
+	box-shadow: 10px 10px;
+}
+
+h3 {
+	background-color: #fff;
+	font: 18pt Helvetica;
+	color: #0000cc;
+	text-align: center;
+	margin: 0px auto; 
+	text-transform: uppercase;
+	line-height: 24pt;
+	width: 300px;
+	border: double;
+	border-color: #000;
+	text-shadow: 3px 3px #ff9900;
+}
+
+/* Opacity */
+
+
+#opacity{
+background-color: #0000cc;
+opacity:0.3;
+filter:Alpha(opacity=30); /* IE8 and earlier */
+}
+
+/* Rounded */
+
+#rounded{
+	border:2px solid #a1a1a1;
+	padding: 25px; 
+	background:#ffe2c8;
+	width: 850px;
+	border-radius:25px;
+	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
+	text-align: justify;
+}
+
+
+div.main {
+	background: url(img/Denver_Broncos4.jpg);
+	background-size: contain;
+	border: 2px solid black;
+}
+
+div.tbox{
+	margin: 25px;
+	background-color: #fff;
+	border: 1px solid black;
+	opacity: 0.7;
+	filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+div.tbox p{
+    color: #000;
+	font-weight: bold;
+	margin: 10%;
+}
+
+/* Multiple columns of text */
+
+
+#mult
+{
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
+text-align: justify;
+}
+
+a {
+	color: #006633; 
+	text-decoration: underline;
+}
+
+.center {text-align: center;}
+
+
+a:hover { 
+	color: #000;
+	background-color: #fff;
+}
+
+#footer {
+	width: 900px;
+	text-align: center;
+	margin: 0px auto;
+}
+
+p.citation {
+	text-align: center;
+}

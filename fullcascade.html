@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>The Full Cascade - linked, embedded, and inline style</title>
+
+<link rel="stylesheet" href="cascadelink.css" type="text/css">
+
+
+<!-- What follows is the contents of my cascadelink.css file, that is, linked style.
+
+
+
+body {
+ 	background-color: #63e9fc;
+	color: #000000;
+}
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 100px; 
+        
+}
+#mainNav li {
+	float: left;
+	width: 9em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+	border: 1px solid #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url(home.png) no-repeat 5px 52%;
+}
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+
+#content {
+	width:900px;
+	margin: 0px auto; 
+	padding: 15px;
+    text-align: left; /* Counteract to IE/Win Hack */
+	border: solid;
+	background-color:#fff;
+}
+
+h2 {
+	background-color: #000000;
+	font: 18pt Helvetica;
+	color: #ffffff;
+	text-align: center;
+	margin: 0px auto; 
+	text-transform: uppercase;
+	line-height: 24pt;
+	width: 250px;
+}
+
+
+p.lead {
+	font: 12pt 'times new roman';
+	color: #000;
+	background: #abff00;
+	margin-left: 125px;
+	margin-right: 125px;
+	text-align: left;
+	line-height: 16pt;
+	border: solid;
+	border-color: #336633;
+	padding: 10px;
+}
+
+p.story {
+	font: 12pt 'times new roman';
+	color: #000;
+	background: #abff00;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: left;
+	line-height: 16pt;
+}
+
+p.morestory {
+	font: 12pt 'times new roman';
+	color: #000;
+	background: #abff00;
+	margin-left: 75px;
+	margin-right: 75px;
+	text-align: left;
+	line-height: 16pt;
+	border: solid;
+	border-color: #336633;
+	padding: 10px;
+}
+
+p.storyend {
+	font: 12pt 'times new roman';
+	color: #000;
+	background: #abff00;
+	text-align: left;
+	line-height: 16pt;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: solid;
+	border-color: #336633;
+	padding: 10px;
+}
+
+a {
+	color: #006633; 
+	text-decoration: underline;
+}
+
+.center {text-align: center;}
+
+
+a:hover { 
+	color: #000;
+	background-color: #fff;
+}
+
+#footer {
+	background-color: #dbf0f7;
+	width: 900px;
+	text-align: center;
+	margin: 0px auto;
+	border: dashed;
+}
+
+p.citation {
+	text-align: center;
+}
+-->
+
+<style type="text/css">
+
+
+/* What follows are my embedded style, that will override
+a few styles from cascade.css */
+
+h2 {
+	line-height: 30pt;
+	width: 300px;
+	padding: 5px;
+	border: solid;
+	border-color: #f900f9;
+}
+
+p.lead {
+    text-indent: 1.0in;
+    padding: 8px;
+    border: double;
+}
+        
+p.story {
+	background: #b8e2ef;
+	margin-left: 125px;
+	margin-right: 125px;
+	line-height: 14pt;
+	border: solid;
+	border-color: #336633;
+	padding: 10px;
+
+}
+
+p.morestory {
+	background: #b8e2ef;
+	margin-left: 125px;
+	margin-right: 125px;
+	line-height: 14pt;
+}
+
+p.storyend {
+	background: #b8e2ef;
+	line-height: 14pt;
+	margin-left: 125px;
+	margin-right: 125px;
+
+}
+
+#footer {
+	width: 800px;
+	border: solid;
+}
+
+a:hover { 
+	color: #ff0000;
+	background-color: #fff2d9;
+	text-decoration: none;
+}
+
+
+
+</style>
+
+
+</head>
+
+<div id="content">
+
+	<section>
+
+
+  		<ul id="mainNav">
+
+		    <li><a href="embedded.html" target="_self" id="homeLink">Embedded Style Sheet</a></li>
+		    <li><a href="linked1.html" target="_self" >Linked Style Sheet 1</a></li>
+		    <li><a href="linked2.html" target="_self" >Linked Style Sheet 2</a></li>
+		    <li><a href="fullcascade.html" target="_self" >Extra Credit A</a></li>
+		    <li><a href="xtracss3B.html" target="_self" >Extra Credit B</a></li>
+
+    
+	    </ul>
+
+		<br><br>
+
+
+<!--  With the inline style below, I have overridden the text-transform from the linked style of cascadelink.css -->
+
+<h2 style="text-transform: capitalize;" >Extreme Research Shows How Arctic Ice Is Dwindling</h2>
+
+
+
+
+		<p class="lead" >
+		The sea ice that blankets the Arctic Ocean isn’t the unbroken white mantle depicted in maps. 
+		It’s a jigsaw puzzle of restless floes that are constantly colliding, deforming, and 
+		fracturing from the force of wind and ocean currents. Last February I stood shivering 
+		on the deck of the Lance, an old Norwegian research vessel, as it picked a path through a 
+		labyrinth of navigable fractures. A barren white plain of ice and snow extended to the 
+		horizon in every direction. The ship’s steel hull shuddered and screeched as it plowed 
+		through floating chunks of jagged ice. The Lance was seeking a solid patch of ice to 
+		attach to—the last one had shattered—so that it could resume its erratic drift across 
+		the frozen sea, charting the fate of Arctic sea ice by going with the floe.
+		</p>
+		
+		<p class="story">
+		The Norwegians have done this before, more than a century ago, when polar explorer 
+		Fridtjof Nansen and the Fram were locked in pack ice for nearly three years during a 
+		vain attempt to drift across the North Pole. But the Arctic is a different ocean now. 
+		The air above it has warmed on average about 5 degrees Fahrenheit in the past century, 
+		more than twice the global average. Much less of the ocean is covered by ice, and much 
+		more of that ice is thinner, seasonal ice rather than thick, old floes. A feedback loop 
+		with far-reaching consequences has taken effect: As white ice is replaced in summer by 
+		dark ocean water, which absorbs more sunlight, the water and air heat further—amplifying 
+		the ongoing thaw.
+		</p>
+		
+		<p class="morestory">
+		“The Arctic warms first, most, and fastest,” explains Kim Holmén, the long-bearded 
+		international director of the Norwegian Polar Institute (NPI), which operates the Lance. 
+		Climate models predict that by as early as 2040 it will be possible in summer to sail 
+		across open water to the North Pole.
+		</p>
+
+<!-- With the inline style below, I have overridden the margin-left and margin-right of 125px from embedded style, which would have overridden 
+     the margin-left and margin-right values of 5px from linked style had I not used inline style. This shows the full cascade of linked, embedded, and inline style conflict resolution.   -->
+		
+		<p class="storyend" style="	margin-left: 100px; margin-right: 100px;">
+		Arctic sea ice helps cool the whole planet by reflecting sunlight back into space. 
+		So its loss inevitably will affect the climate and weather beyond the Arctic, but 
+		precisely how remains unclear. Better forecasts require better data on sea ice and 
+		its shifting, uneven distribution. “Most scientific cruises to the Arctic are conducted 
+		in summer, and this is where we have the most field data,” says Gunnar Spreen, an NPI 
+		sea-ice physicist I met on board the Lance. “The continuous changes that occur 
+		from winter into spring are a huge gap in our understanding.”
+		</p>
+		
+		
+
+</section>
+
+</div>
+
+<footer id="footer">
+		<br>
+
+        <p class="citation">
+		Story by Andy Isaacson courtesy of <a href="http://www.nationalgeographic.com">National Geographic</a>
+		</p>
+		
+		<br>
+
+<p class="center">
+
+<a href="http://validator.w3.org/check?uri=referer">
+<img style="border:0;width:88px;height:31px" src="HTML5.gif"
+alt="HTML5"></a>
+
+
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+
+</p>
+		<br>
+  
+</footer>
+
+</body>
+</html>
+
