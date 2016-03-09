@@ -8,24 +8,52 @@
 	<title>Homework 4 - Graphics</title>
 	
 	<link rel="stylesheet" type="text/css" href="h4style.css">
+	
+	<!-- popup window script 
+
+    NOTES
+
+    The function called new_window is called when the user clicks the iceberg image/link
+
+    In the body section the corresponding code for calling the function is:
+
+    <a href="#" onclick="new_window('motherbigbasin.html');")>
+
+    motherbigbasin.html is passed to url, which is the name of the argument of the function
+
+    - a value of 0 for toolbar, menubar, scrollbars, status, and fullscreen means these browser options are turned off
+	- a value of 1 would mean they are turned on
+
+	-->
+	
+	<script>
+	
+	function new_window(url)  {
+
+			link = window.open(url,
+			'_new', 'toolbar=0,menubar=0,scrollbars=0,status=0,resizable=1,top=100,left=200px,fullscreen=0,Height=700px,Width=800px', '')
+		}
+		
+	</script>
+
 
 </head>
 
-<body>
+<body title="the background image has been gamma corrected">
 
 	<section>
 	
-	<div class="body">
+	<div class="main">
 
 		<h2>Redwoods</h2>
 		
 		
-			<p> Over the years I have had plenty of opportunities to travel throughout Northern
+			<p class="justify"> Over the years I have had plenty of opportunities to travel throughout Northern
 			California to discover the wonder of the Redwood forests composed of 
 			<a href="http://www.savetheredwoods.org/redwoods/giant-sequoias/">Giant Sequoias</a> 
 			and <a href="http://www.savetheredwoods.org/redwoods/coast-redwoods/">Coast Redwoods.</a>  
 
-			<a href="redwoods.html"><img src="img/redwoods2.jpg" class="left" title="click for larger image of The Redwoods"
+			<a href="redwoods.html"><img src="img/redwoods_th.jpg" class="left" title="click for larger image of The Redwoods"
 			width="175" height="93" alt="image of Redwoods"></a>
 
 			There was the trip I took where I drove up the coast from San Francisco all the way to 
@@ -33,32 +61,58 @@
 			and Del Norte Coast Redwoods State Park.  That experience humbled me with the awe and majesty
 			of these massive natural structures.  Much has been accomplished over the decades to preserve these
 			groves of trees that have an average age of 2000 years.  I had the pleasure last 
-			Summer of visiting on of these reserves, 
-			<a href="http://www.savetheredwoods.org/park/montgomery-woods-state-natural-reserve/">The Montgomery Woodstate Natural Reserve,</a>
-			where the third largest tree can be found.
+			Summer of visiting one of these reserves, 
+			<a href="http://www.savetheredwoods.org/park/montgomery-woods-state-natural-reserve/">The Montgomery Woods State Natural Reserve.</a>
+			One of the groves within the Reserve contains the infamous Mendocino tree, which at one time was 
+			considered the third largest tree in the world.
 			</p>
+			
+			<br>
 			
 		<h2>Yosemite National Park</h2>
 		
-			<p>The first spring I moved up here I spent a week up in Yosemite National Park.
+			<p class="justify">The first spring after I moved to California I spent a week up in Yosemite National Park.
 			The park opened up the door to my first experience communing with nature in the 
-			Sierra Nevada mountain range.  I hiked many different trails throughout the Yosemite
-			Valley taking me to various wonders such as 
-			<a href="http://www.yosemitehikes.com/yosemite-valley/half-dome/gallery-trail-part-1.htm">Half dome</a>
-			 and <a href="http://www.nps.gov/yose/planyourvisit/yosemitefallstrail.htm">Yosemite falls.</a>
+			Sierra Nevada mountain range.  
 			 			 
-			<a href="yosemite.html"><img src="img/yomap1.gif" class="right" title="click for Imagemap of Yosemite National Park"
+			<a href="yosemite.html"><img src="img/yomap_th.gif" class="right" title="click for Imagemap of Yosemite National Park"
 			width="100" height="127" alt="image of Yosemite National Park"></a>
 			
-			Unfortunately, I was never able to make it to the Mariposa Grove, the largest 
-			grove of Giant Sequoias in the park. Two of the trees in that grove are among
-			the 30 largest in the world.  The Tuolumne Meadows represent that large area in 
+			I hiked many different trails throughout the Yosemite Valley taking me to various wonders such as 
+			<a href="http://www.yosemitehikes.com/yosemite-valley/half-dome/gallery-trail-part-1.htm">Half dome</a>
+			 and <a href="http://www.nps.gov/yose/planyourvisit/yosemitefallstrail.htm">Yosemite falls.</a>
+			The Tuolumne Meadows represent that large area in 
 			the northern part of the park where elevation averages above 8,500 feet.  Within
 			the meadows the infamous <a href="http://www.nps.gov/yose/planyourvisit/yosemitefallstrail.htm">John Muir Trail</a>
 			 and the <a href="http://www.pcta.org/">Pacific Crest Trail</a> are routed through
-			the park.
+			the park.  Unfortunately, I was never able to make it to the Mariposa Grove, the largest 
+			grove of Giant Sequoias in the park. Two of the trees in that grove are among
+			the 30 largest in the world.  The oldest of those, named 
+			<a href="https://en.wikipedia.org/wiki/Grizzly_Giant#/media/File:Grizzly_Giant_Mariposa_Grove.jpg">Grizzly Giant,</a>
+			has been estimated to be between 1900 and 2400 years old.
 			</p>
+			
+			<br>
 
+		<h2>Big Basin Redwoods State Park</h2>
+
+			<p class="justify">Big Basin Redwoods State Park represents the first California State park established in 1902.
+			Over the years I have had the pleasure to take several camping trips there.  With over 80 miles of
+			trails there were plenty of opportunities for scenic hiking.  Some of the special waterfalls of the Waddell
+			Creek watershed to hike to
+			include the <a href="http://www.redwoodhikes.com/BigBasin/Sempervirens.html">Sempivirens Falls</a>
+			and the <a href="http://www.redwoodhikes.com/BigBasin/BerryCreek.html">Berry Creek Falls.</a>
+			</p>
+			
+			<a href="#" onclick="new_window('motherbigbasin.html')"><img src="img/mother_big_basin_thumb.jpg" 
+			class="left" title="click for popup of image" width="100" height="127" alt=""></a>
+
+			<p class="justify">One of the great landmarks of the park goes by the name Mother of the Forest.  
+			She stands 280 feet tall, but prior to a storm that snapped off the top 50 feet she was 329 feet tall.  
+			The giant redwood held the mark as the tallest tree in the Bay Area and the tallest redwood 
+			South of San Francisco.  However, another giant was found in the park recently along the Meteor trail
+			measuring 328 feet giving it the title as the tallest.
+			</p>
 
 	</div>
 

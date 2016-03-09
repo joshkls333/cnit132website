@@ -19,7 +19,7 @@ body {
 }
 
 .container{
-	width: 800px;
+	width: 900px;
 	margin: 0px auto;
 	text-align: left; /* IE hack */	
 }
@@ -68,7 +68,7 @@ a:hover, #nav a:active{
 
 
 table.main{
-	width: 800px;
+	width: 900px;
 /*	background-color: #a2dd89; */
 	background-color: #f1faa6;
 	padding: 10px;
