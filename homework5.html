@@ -4,24 +4,98 @@
 <head>
 <meta charset="utf-8">
 
-<title>Homework 7 - Forms</title>
+<title>Homework 5 - Multimedia</title>
 
 <style type="text/css">
 
 
 body {
 	font-family: trebuchet, tahoma;  
-	background-image:url('img/under_construction.jpg');
+	background-image:url('img/dkgrnback.jpeg');
 	background-repeat: no-repeat;
 	color: #fff;
   	text-align: center;  /* IE hack */
 }
 
  
-.body { 
+.main { 
 	width: 700px;
     margin: 0px auto;
+	padding: 5px;
+    text-align: center; /* Counteract to IE/Win Hack */	
+	background-color: #006600;
+	color: #ffffcc;
 }
+
+#nav a:hover, #nav a:active{
+	color: #FFFFFF;
+	background-color: #006600;
+	padding: 2px;
+}
+
+#nav{
+	margin: 0px auto;
+	padding: 10px;
+}
+
+#nav li{
+	display: inline;
+	margin: 0px auto;
+	background-color: #aede94;
+/*	background-color: #8bfea8; */
+	padding: 10px;
+	font-size: 14pt;
+}
+
+#nav a{
+	text-decoration: none;   
+	color: #703b00;
+}
+
+#nav  a:hover, #nav a:active
+{
+	color: #FFFFFF;
+	background-color: #006600;
+	padding: 2px;
+}
+
+#nav .selected{
+	font-weight: bold;
+}
+
+
+h2 { 
+	color: #fffdaa;	
+    text-shadow: 2px 2px 5px #000;   
+    font-size: 18pt;                     
+    text-align: center;
+    border-style: solid;
+    border-color: #6a370c;
+    border-radius: 25px;
+    background-color: #aa7739;
+    padding: 10px;
+   }
+
+#content { 
+	width: 400px;
+    margin: 0px auto;
+	padding: 15px;
+    text-align: left; /* Counteract to IE/Win Hack */	
+	background-color: #a5da91;
+	color: #000;
+}
+
+h3 { 
+	color: #fffdaa;	
+    text-shadow: 2px 2px 5px #000;   
+    font-size: 18pt;                     
+    text-align: center;
+    border-style: solid;
+    border-color: #6a370c;
+    border-radius: 25px;
+    background-color: #aa7739;
+    padding: 10px;
+   }
 
 </style>
 
@@ -29,12 +103,24 @@ body {
 
 <body>
 
-	<section class="body">
+	<div class="main">
+			
+			<nav id="nav">
+
+				<ul>
+					<li ><a href="cssanimation.html">CSS3 Animation</a></li>
+					<li ><a href="mm_audio.html">Audio</a></li>
+					<li ><a href="mm_video.html">Video</a></li>
+					<li ><a href="mm_animated_gif.html">Animated Gif</a></li>
+					<li ><a href="inline_frame.html">Inline Frame</a></li>
+				</ul>
+
+			</nav>
+
 
 		<h2>Homework 5 - Multimedia</h2>
-
-
-	</section>
+		
+	</div>
 
 	<footer>
 		
@@ -43,10 +129,15 @@ body {
 				src="HTML5.gif"
 				alt="HTML5">
 		</a>
+		
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            	src="http://jigsaw.w3.org/css-validator/images/vcss"
+            	alt="Valid CSS!" />
+        </a>
+
 
 	</footer>
-
-
 
 </body>
 </html>
