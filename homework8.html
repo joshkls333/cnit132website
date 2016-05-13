@@ -4,15 +4,14 @@
 <head>
 <meta charset="utf-8">
 
-<title>Homework 7 - Forms</title>
+<title>Homework 8 - CGI Scripting</title>
 
 <style type="text/css">
 
 
 body {
 	font-family: trebuchet, tahoma;  
-	background-image:url('img/under_construction.jpg');
-	background-repeat: no-repeat;
+	background-color: #4E7B2E;
 	color: #fff;
   	text-align: center;  /* IE hack */
 }
@@ -23,6 +22,59 @@ body {
     margin: 0px auto;
 }
 
+#main {
+	font-family: futura;
+	width: 650px;
+	height: 200px;
+	background-color: #DE8208;
+	border-style: solid;
+    margin: 0px auto;
+    text-align: center;
+    padding: 25px;
+    color: #000;
+    font-size: 26px;    
+}
+
+/* 8A link positioning */
+
+#linkplace1 {
+	position: absolute;
+	top: 120px;
+	left: 750px;
+}
+
+/* 8B link positioning */
+
+#linkplace2 {
+	position: absolute;
+	top: 270px;
+	left: 750px;
+}
+
+
+#hdr { 
+	color: #3D1E1B;	
+    font-size: 18pt;                     
+    text-align: center;
+    border-style: solid;
+    background-color: #DE8208;
+    padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: #1A3C1A;
+}
+
+a:hover, a:active
+{
+	color: #ED6B00;
+	background-color: #1A3C1A;
+	padding: 1px;
+}
+
+
+
 </style>
 
 </head>
@@ -31,10 +83,24 @@ body {
 
 	<section class="body">
 
-		<h2>Homework 8 - CGI Scripts</h2>
+		<h2 id="hdr">Homework 8 - CGI Scripts</h2>
+		
+		<div id="main">
+		
+			<div>Form with Perl Script:
+			<a href="homework8a.html">HW 8A</a></div>
+			<br>
+			<div>Form with PHP Script:
+			<a href="homework8b.html">HW 8B</a></div>
+			
+			
+		</div>
+		
+		
 
 
 	</section>
+	<br>
 
 	<footer>
 		
@@ -43,6 +109,12 @@ body {
 				src="HTML5.gif"
 				alt="HTML5">
 		</a>
+
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            	src="http://jigsaw.w3.org/css-validator/images/vcss"
+            	alt="Valid CSS!" />
+        </a>
 
 	</footer>
 

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>CSS3 Animation - Multimedia</title>
+
+<style type="text/css">
+
+
+body {
+	font-family: trebuchet, tahoma;  
+	background-image:url('img/red_blk_background.jpg');
+	background-repeat: no-repeat;
+	color: #fff;
+  	text-align: center;  /* IE hack */
+}
+
+ 
+.main { 
+	width: 700px;
+    margin: 0px auto;
+	padding: 5px;
+    text-align: center; /* Counteract to IE/Win Hack */	
+	color: #ffffcc;
+}
+
+#nav a:hover, #nav a:active{
+	color: #FFFFFF;
+	background-color: #750000;
+}
+
+#nav{
+	margin: 0px auto;
+	padding: 10px;
+}
+
+#nav li{
+	display: inline;
+	margin: 0px auto;
+	background-color: #f94b4b;
+	padding: 10px;
+	font-size: 14pt;
+}
+
+#nav a{
+	text-decoration: none;   
+	color: #000000;
+}
+
+#nav .selected{
+	font-weight: bold;
+}
+
+#content { 
+	width: 500px;
+	height: 450px;
+    margin: 0px auto;
+	padding: 15px;
+    text-align: left; /* Counteract to IE/Win Hack */	
+	background-color: #ffffdf;
+	color: #000;
+}
+
+h3 { 
+	color: #fffdaa;	
+    text-shadow: 2px 2px 5px #000;   
+    font-size: 18pt;                     
+    text-align: center;
+    border-style: solid;
+    border-color: #f94b4b;
+    border-radius: 25px;
+    background-color: #370000;
+    padding: 10px;
+   }
+
+#animation {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: rotatingrectangle; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
+    animation-name: rotatingrectangle;
+    animation-duration: 10s;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotatingrectangle {
+    0%   {background-color:red; left:0px; top:0px;}
+    12%  {background-color:orange; left:100px; top:100px;
+	        -ms-transform: rotate(45deg); /* IE 9 */
+		    -webkit-transform: rotate(45deg); /* Safari */
+		    transform: rotate(45deg); /* Standard syntax */
+}
+    24%  {background-color:yellow; left:200px; top:200px;
+	        -ms-transform: rotate(90deg) scale(2,2); /* IE 9 */
+		    -webkit-transform: rotate(90deg scale(2,2)); /* Safari */
+		    transform: rotate(90deg) scale(2,2); /* Standard syntax */
+}
+    36%  {background-color: #84a136; left:100px; top:300px;
+	        -ms-transform: rotate(135deg); /* IE 9 */
+		    -webkit-transform: rotate(135deg); /* Safari */
+		    transform: rotate(135deg); /* Standard syntax */
+}
+    50%  {background-color: green; left:0px; top:400px;
+	        -ms-transform: rotate(180deg); /* IE 9 */
+		    -webkit-transform: rotate(180deg); /* Safari */
+		    transform: rotate(180deg); /* Standard syntax */
+}
+    67%  {background-color: #2a4f6e; left:-100px; top:300px;
+	        -ms-transform: rotate(225deg); /* IE 9 */
+		    -webkit-transform: rotate(225deg); /* Safari */
+    		transform: rotate(225deg); /* Standard syntax */
+}
+    78%  {background-color:blue; left:-200px; top:200px;
+	        -ms-transform: rotate(270deg) scale(2,2); /* IE 9 */
+ 		   	-webkit-transform: rotate(270deg) scale(2,2); /* Safari */
+ 		   	transform: rotate(270deg) scale(2,2); /* Standard syntax */
+}
+    89%  {background-color:purple; left:-100px; top:100px;
+	        -ms-transform: rotate(315deg); /* IE 9 */
+ 		   	-webkit-transform: rotate(315deg); /* Safari */
+ 		   	transform: rotate(315deg); /* Standard syntax */
+}
+    100%  {background-color:red; left:0px; top:0px;
+	        -ms-transform: rotate(360deg); /* IE 9 */
+ 		   	-webkit-transform: rotate(360deg); /* Safari */
+ 		   	transform: rotate(360deg); /* Standard syntax */
+}
+
+
+/* Standard syntax */
+@keyframes rotatingrectangle {
+    0%   {background-color:red; left:0px; top:0px;}
+    12%  {background-color:orange; left:100px; top:100px;
+	        -ms-transform: rotate(45deg); /* IE 9 */
+		    -webkit-transform: rotate(45deg); /* Safari */
+		    transform: rotate(45deg); /* Standard syntax */
+}
+    24%  {background-color:yellow; left:200px; top:200px;
+	        -ms-transform: rotate(90deg) scale(2,2); /* IE 9 */
+		    -webkit-transform: rotate(90deg scale(2,2)); /* Safari */
+		    transform: rotate(90deg) scale(2,2); /* Standard syntax */
+}
+    36%  {background-color: #84a136; left:100px; top:300px;
+	        -ms-transform: rotate(135deg); /* IE 9 */
+		    -webkit-transform: rotate(135deg); /* Safari */
+		    transform: rotate(135deg); /* Standard syntax */
+}
+    50%  {background-color: green; left:0px; top:400px;
+	        -ms-transform: rotate(180deg); /* IE 9 */
+		    -webkit-transform: rotate(180deg); /* Safari */
+		    transform: rotate(180deg); /* Standard syntax */
+}
+    67%  {background-color: #2a4f6e; left:-100px; top:300px;
+	        -ms-transform: rotate(225deg); /* IE 9 */
+		    -webkit-transform: rotate(225deg); /* Safari */
+    		transform: rotate(225deg); /* Standard syntax */
+}
+    78%  {background-color:blue; left:-200px; top:200px;
+	        -ms-transform: rotate(270deg) scale(2,2); /* IE 9 */
+ 		   	-webkit-transform: rotate(270deg) scale(2,2); /* Safari */
+ 		   	transform: rotate(270deg) scale(2,2); /* Standard syntax */
+}
+    89%  {background-color:purple; left:-100px; top:100px;
+	        -ms-transform: rotate(315deg); /* IE 9 */
+ 		   	-webkit-transform: rotate(315deg); /* Safari */
+ 		   	transform: rotate(315deg); /* Standard syntax */
+}
+    100%  {background-color:red; left:0px; top:0px;
+	        -ms-transform: rotate(360deg); /* IE 9 */
+ 		   	-webkit-transform: rotate(360deg); /* Safari */
+ 		   	transform: rotate(360deg); /* Standard syntax */
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="main">
+		
+			<nav id="nav">
+
+				<ul>
+					<li ><a href="cssanimation.html">CSS3 Animation</a></li>
+					<li ><a href="mm_audio.html">Audio</a></li>
+					<li ><a href="mm_video.html">Video</a></li>
+					<li ><a href="mm_animated_gif.html">Animated Gif</a></li>
+					<li ><a href="inline_frame.html">Inline Frame</a></li>
+				</ul>
+
+			</nav>
+			
+			<header>
+
+			<h3 id="hdr">CSS3 Animation</h3>
+
+			</header>
+			
+			<div id="content">
+
+			
+			<div id="animation">Color Pallette</div>
+
+					
+			</div>
+
+
+	</div>
+
+	<footer>
+		
+		<a href="http://validator.w3.org/check?uri=referer">
+			<img style="border:0;width:88px;height:31px" 
+				src="HTML5.gif"
+				alt="HTML5">
+		</a>
+		
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            	src="http://jigsaw.w3.org/css-validator/images/vcss"
+            	alt="Valid CSS!" />
+        </a>
+
+
+	</footer>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Inline Frames with Javascript - Multimedia</title>
+
+<style type="text/css">
+
+
+body {
+	font-family: trebuchet, tahoma;  
+ 	background: blue; 
+ 	background: -webkit-linear-gradient(yellow,blue); 
+ 	background: -o-linear-gradient(yellow,blue); 
+ 	background: -moz-linear-gradient(yellow,blue); 
+ 	background: linear-gradient(yellow,blue); 
+	color: #000000;
+  	text-align: center;  /* IE hack */
+}
+
+ 
+.main { 
+	width: 700px;
+    margin: 0px auto;
+	padding: 15px;
+    text-align: left; /* Counteract to IE/Win Hack */	
+	background-color: #2310af;
+	color: #ffffcc;
+}
+
+a:hover, #nav a:active{
+	color: #FFFFFF;
+	background-color: #006600;
+	padding: 2px;
+}
+
+#nav{
+	margin: 0px auto;
+	padding: 10px;
+}
+
+#nav li{
+	display: inline;
+	margin: 0px auto;
+	background-color: #fce200;
+	padding: 10px;
+	font-size: 14pt;
+}
+
+#nav a{
+	text-decoration: none;   
+	color: #000000;
+}
+
+#nav  a:hover, #nav a:active
+{
+	color: #FFFFFF;
+	background-color: #000000;
+	padding: 2px;
+}
+
+#nav .selected{
+	font-weight: bold;
+}
+
+
+h2 { 
+	color: #2310af;	
+    text-shadow: 2px 2px 5px #fff;   
+    font-size: 18pt;                     
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    background-color: #fce200;
+    padding: 10px;
+   }
+
+#content { 
+	width: 600px;
+    margin: 0px auto;
+	padding: 15px;
+    text-align: center; /* Counteract to IE/Win Hack */	
+	background-color: #fce200;
+	color: #000;
+}
+
+iframe{
+	border: 1px white;
+}
+
+table {
+	padding: 5px; 
+	background-color: black; 
+	width: 500px; 
+	margin: 0px auto; }
+
+td {
+	text-align: left; 
+	width: 250px;
+}
+
+th {
+	text-align: left;
+	color: #fce200;
+}
+
+
+
+h3 { 
+/*       color: #ffffcc;  */
+	color: #fffdaa;	
+    text-shadow: 2px 2px 5px #000;   
+    font-size: 18pt;                     
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    background-color: #2310af;
+/*       background-color: #33a62d;  */
+    padding: 10px;
+   }
+
+
+</style>
+
+</head>
+
+<body>
+
+	<section class="main">
+
+
+		<h2>Homework 5 - Multimedia</h2>
+		
+		<br>
+		
+			<nav id="nav">
+
+				<ul>
+					<li ><a href="cssanimation.html">CSS3 Animation</a></li>
+					<li ><a href="mm_audio.html">Audio</a></li>
+					<li ><a href="mm_video.html">Video</a></li>
+					<li ><a href="mm_animated_gif.html">Animated Gif</a></li>
+					<li ><a href="inline_frame.html">Inline Frame</a></li>
+				</ul>
+
+			</nav>
+			
+			<section id="content">
+			
+			<h3>Golden State Warriors Starting Lineup</h3>
+			
+				<table>
+
+				<tr>
+				<th>&nbsp;Players</th>
+				<th>&nbsp;&nbsp;Pictures</th>
+				</tr>
+
+				<tr>
+
+				<td>
+				<a href="img/curry.png" target="ifr" onclick="window.ifdesc.location='curry.html'">Stephen Curry - PG</a></td>
+
+				<td rowspan="6">
+
+				<iframe src="ifrp.html" width="230" height="185" name="ifr">
+
+				Your browser does not support inline frames.
+				</iframe>
+
+				</td>
+				</tr>
+
+				<tr>
+				<td>
+				<a href="img/thompson.png" target="ifr" onclick="window.ifdesc.location='thompson.html'">Klay Thompson - SG</a> </td></tr>
+
+				<tr>
+				<td>
+				<a href="img/barnes.png" target="ifr" onclick="window.ifdesc.location='barnes.html'">Harrison Barnes - F</a></td>
+				</tr>
+
+
+				<tr>
+				<td>
+				<a href="img/green.png" target="ifr" onclick="window.ifdesc.location='green.html'">Draymond Green - PF</a></td>
+				</tr>
+
+				<tr>
+				<td>
+				<a href="img/bogut.png" target="ifr" onclick="window.ifdesc.location='bogut.html'">Andrew Bogut - C</a></td>
+				</tr>
+
+
+				</table>
+
+				<br>
+
+
+
+				<iframe src="ifrdesc.html" width="600" height="300" name="ifdesc">
+				</iframe>
+
+			
+			</section>
+
+
+
+
+
+	</section>
+
+	<footer>
+		
+		<a href="http://validator.w3.org/check?uri=referer">
+			<img style="border:0;width:88px;height:31px" 
+				src="HTML5.gif"
+				alt="HTML5">
+		</a>
+		
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            	src="http://jigsaw.w3.org/css-validator/images/vcss"
+            	alt="Valid CSS!" />
+        </a>
+
+
+	</footer>
+
+
+
+</body>
+</html>
+

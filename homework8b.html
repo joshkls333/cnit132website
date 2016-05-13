@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>SF Giants Fan Submission Form</title>
+
+<script>
+
+function Validate()
+{
+
+// create messages
+
+    var msg = "Please enter your name";
+    var msg1 = "Please enter your email address";
+    var msg2 = "Please enter your comments";
+
+// create variables to hold form data entered by user
+// Note the syntax: from this document
+// get the value entered of a particular id variable (name, email, comment)
+
+    var name1 = document.getElementById("name").value;
+    var email1 = document.getElementById("email").value;
+    var comments1= document.getElementById("comments").value;
+
+// check for any space characters that may be input
+      
+    if (name1 == "" || name1 == null)
+    {          
+        alert (msg);
+       return false;
+    }          
+
+// if name info entered is blank then alert message of  "Please enter your name"
+// return false means that the form mailto action should NOT be submitted by the browser
+// the same schema is done for email, comments, and status as shown below
+
+    if (email1 == "" || email1 == null)
+    {          
+        alert (msg1);
+        return false;
+    }     
+
+    if (comments1 == "" || comments1 == null)
+    {     
+        alert (msg2);
+        return false;
+    }   
+      
+}
+
+</script>
+
+<style type="text/css">
+
+
+body {
+	font-family: arial;  
+ 	background: orange; 
+ 	background: -webkit-linear-gradient(orange,black); 
+ 	background: -o-linear-gradient(orange,black); 
+ 	background: -moz-linear-gradient(orange,black); 
+ 	background: linear-gradient(orange,black); 
+	color: #fff;
+  	text-align: center;  /* IE hack */
+}
+ 
+/* SF logo pic positioning */
+
+#SFLogo{
+    position: absolute;
+    top: 100px;
+    left: 25px;
+}
+
+/* Giants logo pic positioning */
+
+#GiantsLogo{
+    position: absolute;
+    top: 400px;
+    left: 25px;
+}
+
+.body { 
+	width: 700px;
+    margin: 0px auto;
+	background-color: #000;
+	text-align: justify;
+	padding: 5px;
+	color: #F5F454;
+}
+    
+.main {
+	font-family: futura;
+	width: 650px;
+	background-color: #DE8208;
+    margin: 0px auto;
+    text-align: left;
+    padding: 25px;
+    color: #000;
+    font-size: 16px;
+    
+}
+
+.important {
+     color: #FF1D05;
+} 
+
+
+
+#hdr { 
+	color: #3D1E1B;	
+    font-size: 18pt;                     
+    text-align: center;
+    border-style: solid;
+    border-color: #6a370c;
+    background-color: #DE8208;
+    padding: 10px;
+}
+
+
+td {
+	font-size:15px;
+	color: #000000;
+	font-weight: bold;
+	padding: 2px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="body">
+ 
+		<h2 id="hdr">San Francisco Giants Fan Submission</h2>
+		
+		<p class="top">Thanks for joining the San Francisco Giants fan club.
+		We need to collect some information about yourself.  In order to be included in
+		the drawing for free tickets would you please fill out the following form.  Please
+		include a special experience you had at either attending a home game, watching a 
+		game, or attending an away game.
+        <b><span class="important">Please ensure and enter your Name, email, and experience.</span></b></p>
+
+        <div class="main">
+        
+        <form method="post" action= "sfgiantsfan.php" name="myform"
+		onsubmit="window.alert('Thank you for taking the time to fill the form!')" >
+        
+        
+		<table>
+		<tr>
+		<td>Name:</td><td><input type="text" size="45" maxlength="50" name="sender_name" id="name"></td>
+		</tr>
+		<tr>
+
+		<td>Email Address:</td><td><input type="text" size="45" maxlength="50" name="sender_email" id="email"></td>
+		</tr>
+		</table>
+
+		
+		<br>
+<!--
+		NOTE: In this case, status[] means there is an array of occupations
+		and input type="hidden" lines may be needed to prevent displaying an error
+		if the user fails to check one of the boxes
+-->
+        Favorite Player: 
+		<input type="hidden" name="players[]" value="">
+		<select size="8" name="players[]" multiple>
+
+		<option value=" ">-Choose one-</option>
+		<option value="Hunter_Pence">Hunter Pence</option>
+		<option value="Buster_Posey">Buster Posey</option>
+		<option value="Madison_Bumgarner">Madison Bumgarner</option>
+		<option value="Joe_Panik">Joe Panik</option>
+		<option value="Brandon_Belt">Brandon Belt</option>
+		<option value="Brandon_Crawford">Brandon Crawford</option>
+		<option value="Other">Other</option>
+		</select>
+		<br>
+
+<!-- 
+		In this case, each checkbox variable has a different name and
+		input type="hidden" lines may be needed to prevent displaying an error
+		if the user fails to check one of the boxes
+-->
+
+		<p>Sections You have sat in at the ballpark: (choose all that apply)</p>
+        <table>
+        <tr>
+		<td><input type="hidden" name="seats1" value=""></td>
+		<td><input type="checkbox" name="seats1" value="Arcade">Arcade</td>
+		<td><input type="hidden" name="seats2" value=""></td>
+		<td><input type="checkbox" name="seats2" value="Club_Level">Club_Level</td>
+		<td><input type="hidden" name="seats3" value=""></td>
+		<td><input type="checkbox" name="seats3" value="Bleachers">Bleachers</td>
+		</tr>
+		
+		<tr>
+		<td><input type="hidden" name="seats4" value=""></td>
+		<td><input type="checkbox" name="seats4" value="Field_Club">Field Club</td>
+		<td><input type="hidden" name="seats5" value=""></td>
+		<td><input type="checkbox" name="seats5" value="Lower_Box">Lower Box</td>
+		<td><input type="hidden" name="seats6" value=""></td>
+		<td><input type="checkbox" name="seats6" value="View_Reserve">View Reserve</td>
+		</tr>
+		</table>
+		<br>
+		
+ 
+       Preferred Seating Area:
+        <br><br>
+		<input type="radio" name="area" value="Field_Club" checked>Field Club
+		<input type="radio" name="area" value="Club_Level" >Club Level
+		<input type="radio" name="area" value="Bleachers" >Bleachers
+		<br>
+		
+		<p>Experience (limit to 375 characters)</p>
+
+		<textarea name="experience" id="experience" rows="5" cols="75"></textarea><br>
+
+		<input type="submit" value="SUBMIT"  onclick="return Validate(this.form)">
+
+		<input type="reset" value="RESET">
+
+
+		</form>
+		
+		</div>
+
+	</div>
+	
+		<div id="SFLogo">
+		<img src="img/SF_logo.png" width="280" height="180" alt="SFGiants">
+		</div>
+		
+		<div id="GiantsLogo">
+		<img src="img/giants_logo_th1.jpg" width="280" height="180" alt="Giants">
+		</div>
+
+	<br>
+
+	<footer>
+		
+		<a href="http://validator.w3.org/check?uri=referer">
+			<img style="border:0;width:88px;height:31px" 
+				src="HTML5.gif"
+				alt="HTML5">
+		</a>
+
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            	src="http://jigsaw.w3.org/css-validator/images/vcss"
+            	alt="Valid CSS!" />
+        </a>
+
+	</footer>
+	<br><br>
+
+
+
+</body>
+</html>
+

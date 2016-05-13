@@ -1,0 +1,96 @@
+/**********
+HW4 Style Sheet for CNIT 132
+Created by: Josh Klaus
+Email: jklaus1@mail.ccsf.edu
+**********/
+
+
+
+body {
+	font-family: trebuchet, tahoma;  
+	background-image: url(img/dkgrnbackgc.jpeg);
+	background-repeat: no-repeat;
+	color: #fff;
+  	text-align: center;  /* IE hack */
+}
+
+ 
+.main { 
+	width: 700px;
+    margin: 0px auto;
+	padding: 15px;
+    text-align: left; /* Counteract to IE/Win Hack */	
+	background-color: #006600;
+	color: #ffffcc;
+}
+
+h2 { 
+/*       color: #ffffcc;  */
+	color: #fffdaa;	
+    text-shadow: 2px 2px 5px #000;   
+    font-size: 18pt;                     
+    text-align: center;
+    border-style: solid;
+    border-color: #6a370c;
+    border-radius: 25px;
+    background-color: #aa7739;
+/*       background-color: #33a62d;  */
+    padding: 10px;
+   }
+
+img.left {
+	float: left; 
+	margin-right: 10px;
+}
+
+img.right {
+	float: right; 
+	margin-left: 10px;
+}
+
+
+.justify { 
+	text-align: justify; 
+	line-height: 18pt;
+}
+
+.center { text-align: center; }
+
+a{
+ text-decoration: none;
+ color: #ffff00;
+/* color: #703b00; */
+}
+
+a:hover,  a:active{
+	color: #000000;
+	background-color: #ffff00;
+	padding: 1px;
+}
+
+p{ 
+	line-height: 14pt;
+}
+
+.footer{
+	font-family: arial;
+	font-size: 18px;
+    float: left;
+	clear: both;
+	width: 100%;
+	padding: 10px;
+	color: #ffffff;
+	text-align: center;
+}
+
+footer a{
+	text-decoration: none;   
+	color: #ccff33;
+}
+
+footer  a:hover, #nav a:active
+{
+	color: #000000;
+	background-color: #ccff33;
+	padding: 2px;
+}

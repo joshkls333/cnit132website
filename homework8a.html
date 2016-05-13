@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Science Discovery Feedback Form</title>
+
+<script>
+
+function Validate()
+{
+
+// create messages
+
+    var msg = "Please enter your name";
+    var msg1 = "Please enter your email address";
+    var msg2 = "Please enter your comments";
+
+// create variables to hold form data entered by user
+// Note the syntax: from this document
+// get the value entered of a particular id variable (name, email, comment)
+
+    var name1 = document.getElementById("name").value;
+    var email1 = document.getElementById("email").value;
+    var comments1= document.getElementById("comments").value;
+
+// check for any space characters that may be input
+      
+    if (name1 == "" || name1 == null)
+    {          
+        alert (msg);
+       return false;
+    }          
+
+// if name info entered is blank then alert message of  "Please enter your name"
+// return false means that the form mailto action should NOT be submitted by the browser
+// the same schema is done for email, comments, and status as shown below
+
+    if (email1 == "" || email1 == null)
+    {          
+        alert (msg1);
+        return false;
+    }     
+
+    if (comments1 == "" || comments1 == null)
+    {     
+        alert (msg2);
+        return false;
+    }   
+      
+}
+
+</script>
+
+<style type="text/css">
+
+
+body {
+	font-family: arial;  
+	background-color: #4E7B2E;
+	color: #fff;
+  	text-align: center;  /* IE hack */
+}
+ 
+.body { 
+	width: 700px;
+    margin: 0px auto;
+	background-color: #000;
+	text-align: justify;
+	padding: 5px;
+	color: #F5F454;
+}
+    
+.main {
+	font-family: futura;
+	width: 650px;
+	background-color: #DE8208;
+    margin: 0px auto;
+    text-align: left;
+    padding: 25px;
+    color: #000;
+    font-size: 16px;
+    
+}
+
+.important {
+     color: #FF1D05;
+} 
+
+
+
+#hdr { 
+	color: #3D1E1B;	
+    font-size: 18pt;                     
+    text-align: center;
+    border-style: solid;
+    border-color: #6a370c;
+    background-color: #DE8208;
+    padding: 10px;
+}
+
+
+td {
+	font-size:15px;
+	color: #000000;
+	font-weight: bold;
+	padding: 2px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="body">
+
+		<h2 id="hdr">Science Discovery Workshop</h2>
+		
+		<p class="top">Congratulations on being selected to our special summer workshop on 
+		expanding scientific discovery. Please fill out the following form, and then click 
+		the submit button.   
+        The data collected will provide us with better direction on how to 
+        provide you the best learning experience tailored to your background and goals.
+        <b><span class="important">Please ensure and enter your Name, email, and comments.</span></b></p>
+
+        <div class="main">
+        
+        <form method="post" action="sciencewkshp.pl" name="myform"
+		onsubmit="window.alert('Thank you for taking the time to fill the form!')" >
+        
+        
+		<table>
+		<tr>
+		<td>Name:</td><td><input type="text" size="45" maxlength="50" name="name" id="name"></td>
+		</tr>
+		<tr>
+
+		<td>Email Address:</td><td><input type="text" size="45" maxlength="50" name="email" id="email"></td>
+		</tr>
+		</table>
+
+		
+		<br>
+
+        Favorite Science Subject: 
+		<select name="science">
+		<option value=" ">-Choose one-</option>
+		<option value="MicroBiology">MicroBiology</option>
+		<option value="Ecology">Ecology</option>
+		<option value="Chemistry">Chemistry</option>
+		<option value="Geography">Geography</option>
+		<option value="Geology">Geology</option>
+		<option value="Physics">Physics</option>
+		<option value="other">Other</option>
+		</select>
+		<br>
+
+		<p>Workshops you are interested in: (choose all that apply)</p>
+        <table>
+        <tr>
+		<td><input type="checkbox" name="compsci1" value="Computational_Ecology/">Computational Ecology</td>
+		<td><input type="checkbox" name="compsci2" value="Statistical_Science/">Statistical Science</td>
+		<td><input type="checkbox" name="compsci3" value="Climate_Modeling/">Climate Modeling</td>
+		</tr>
+		
+		<tr>
+		<td><input type="checkbox" name="compsci4" value="Energy_Conservation/">Energy Conservation</td>
+		<td><input type="checkbox" name="compsci5" value="GIS/">Geographical Information System</td>
+		<td><input type="checkbox" name="compsci6" value="Nuclear_Physics">Nuclear Physics</td>
+		</tr>
+		</table>
+		<br>
+		
+        Preferred Computer Operating System:
+        <br><br>
+		<input type="radio" name="compos" value="Mac" checked>Mac
+		<input type="radio" name="compos" value="Windows" >Windows
+		<input type="radio" name="compos" value="Linux" >Linux
+		<br>
+		<p>Background in Computer Programming: (choose all that apply)</p>
+        <table>
+        <tr>
+		<td><input type="checkbox" name="lang1" value="Java/">Java</td>
+		<td><input type="checkbox" name="lang2" value="C++/">C++</td>
+		<td><input type="checkbox" name="lang3" value="HTML/">HTML</td>
+		<td><input type="checkbox" name="lang4" value="CSS/">CSS</td>
+		</tr>
+		
+		<tr>
+		<td><input type="checkbox" name="lang5" value="XML/">XML</td>
+		<td><input type="checkbox" name="lang6" value="Python/">Python</td>
+		<td><input type="checkbox" name="lang7" value="Javascript/">Javascript</td>
+		<td><input type="checkbox" name="lang8" value="Linux/Unix">Linux/Unix</td>
+		</tr>
+		</table>
+		
+		<p>Comments/Questions</p>
+
+		<textarea name="comments" id="comments" rows="5" cols="75"></textarea><br>
+
+		<input type="submit" value="SUBMIT"  onclick="return Validate(this.form)">
+
+		<input type="reset" value="RESET">
+
+
+		</form>
+		
+		</div>
+
+	</div>
+
+	<footer>
+		
+		<a href="http://validator.w3.org/check?uri=referer">
+			<img style="border:0;width:88px;height:31px" 
+				src="HTML5.gif"
+				alt="HTML5">
+		</a>
+
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            	src="http://jigsaw.w3.org/css-validator/images/vcss"
+            	alt="Valid CSS!" />
+        </a>
+
+	</footer>
+
+
+
+</body>
+</html>
+

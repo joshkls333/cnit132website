@@ -1,0 +1,118 @@
+<?php
+$msg = "E-MAIL SENT FROM FOG\n";
+$msg .= "Sender's Name:    $_POST[sender_name]\n";
+$msg .= "Sender's E-mail:  $_POST[sender_email]\n";
+$msg .= "Sender's Age:     $_POST[age]\n";
+
+$msg .= "Sender's Favorite Colors: $_POST[color] $_POST[color1] $_POST[color2]\n";
+
+$msg .= "Occupation: ";
+
+
+	$status=$_POST['status'];
+	if ($status){
+	 foreach ($status as $f) {$msg .=  "$f  ";}
+	}
+
+
+
+$msg .= "\nSender's Message:     $_POST[message]\n";
+$to = "srubin45@comcast.net";
+$subject = "Web Site Feedback - Fog";
+$mailheaders = "From: My Web Site <> \n";
+$mailheaders .= "Reply-To: $_POST[sender_email]\n\n";
+mail($to, $subject, $msg, $mailheaders);
+
+if (mail($to, $subject, $msg, $mailheaders)) {
+   echo("<p>Email successfully sent!</p>");
+  } else {
+   echo("<p>Email delivery failed</p>");
+  }
+
+
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<title>The following email has been sent to Steve Rubin</title>
+
+<style>
+body {background-color: #f5f5dc;}
+
+#contents {
+	
+	margin: 0px auto; padding: 15px;
+        text-align: left; /* Counteract to IE/Win Hack */	
+        border: 1px solid;
+        width: 630px; border: solid; padding: 10px; background-color: #ffffff;}
+
+</style>
+
+</head>
+<body>
+
+<section>
+
+<br><br>
+
+<div id="contents">
+
+
+<h3>The following email has been sent to Steve Rubin:
+<br>(php script uses multiple select items)
+</h3>
+
+
+<div id="box">
+
+<p><b>Your Name: </b>
+<?php echo "$_POST[sender_name]"; ?>
+<br><br>
+
+<b>Your E-mail Address: </b>
+<?php echo "$_POST[sender_email]"; ?>
+<br><br>
+
+<b>Your Age: </b>
+<?php echo "$_POST[age]"; ?>
+<br><br>
+
+
+<b>Your Favorite colors: </b>
+<?php echo "$_POST[color]"; ?>
+<?php echo " "; ?>
+<?php echo "$_POST[color1]"; ?>
+<?php echo " "; ?>
+<?php echo "$_POST[color2]"; ?>
+<br><br>
+
+
+<b>Your Occupation: </b><br>
+
+<?php
+	$status=$_POST['status'];
+	if ($status){
+	 foreach ($status as $f) {echo $f,'<br>';}
+	}
+
+?>
+
+<br><br>
+
+
+<b>Your Message:</b>
+<?php echo "$_POST[message]"; ?>
+</p>
+
+
+</div> 
+
+</section>
+</body>
+</html>

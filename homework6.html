@@ -4,38 +4,200 @@
 <head>
 <meta charset="utf-8">
 
-<title>Homework 7 - Forms</title>
-
-<style type="text/css">
+<title>Homework 6 - CSS3 - Positioning</title>
 
 
-body {
-	font-family: trebuchet, tahoma;  
-	background-image:url('img/under_construction.jpg');
-	background-repeat: no-repeat;
-	color: #fff;
-  	text-align: center;  /* IE hack */
-}
-
- 
-.body { 
-	width: 700px;
-    margin: 0px auto;
-}
-
-</style>
+<link rel="stylesheet" type="text/css" href="h6style.css">
 
 </head>
 
 <body>
 
-	<section class="body">
+	<div class="body">
 
-		<h2>Homework 6 - Cascading Style Sheets II</h2>
+		<div id="header">
+		<header id="hdr">Mountain Biking and Snowboarding Adventures</header>
+		</div>
+		 
+				<div id="mtbike">
+				<table>
 
+				<tr>
+				<th colspan="5">Mountain Biking</th>
+				</tr>
 
-	</section>
+					<tr>
+						<th>Trail</th>
+						<th>Location</th> 
+						<th>State</th> 
+						<th>Distance(mi)</th>
+						<th>Ascent(ft)</th>
+					</tr>
+		
+					<tr>
+						<td><a href="http://www.mtbproject.com/trail/808937">Tamarancho</a></td>
+						<td>Fairfax</td>
+						<td>CA</td>
+						<td>10.6</td> 
+						<td>1483</td> 
+					</tr>
 
+					<tr>
+						<td><a href="http://www.mtbproject.com/trail/4147092/china-camp-state-park-loop">China Camp</a></td>
+						<td>Marin</td>
+						<td>CA</td>
+						<td>10.6</td> 
+						<td>855</td> 
+					</tr>
+
+					<tr>
+						<td><a href="http://www.mtbproject.com/trail/158941">Slick Rock</a></td>
+						<td>Moab</td>
+						<td>UT</td>
+						<td>9.6</td> 
+						<td>1441</td> 
+					</tr>
+
+					<tr>
+						<td><a href="http://www.mtbproject.com/trail/601365/walker-ranch">Walker Ranch</a></td>
+						<td>Boulder</td>
+						<td>C0</td>
+						<td>7.4</td> 
+						<td>1579</td> 
+					</tr>
+
+					<tr>
+						<td><a href="http://www.mtbproject.com/trail/758676/wilderness-park">Wilderness Park</a></td>
+						<td>Lincoln</td>
+						<td>NE</td>
+						<td>16.7</td> 
+						<td>224</td> 
+					</tr>
+				</table>
+				</div>
+				
+				<div id="snow">
+				<table>
+
+				<tr>
+				<th colspan="5">Snowboarding</th>
+				</tr>
+
+					<tr>
+						<th>Resort</th>
+						<th>Location</th> 
+						<th>State</th> 
+						<th>Trails</th>
+						<th>Altitude(ft)</th>
+					</tr>
+		
+					<tr>
+						<td><a href="http://www.coppercolorado.com/winter/the_mountain/trail_map">Copper Mtn</a></td>
+						<td>Summit County</td>
+						<td>CO</td> 
+						<td>140</td> 
+						<td>12313</td> 
+					</tr>
+
+					<tr>
+						<td><a href="http://www.breckenridge.com/mountain/resort-maps.aspx">Breckenridge</a></td>
+						<td>Summit County</td>
+						<td>CO</td> 
+						<td>187</td> 
+						<td>12998</td> 
+					</tr>
+
+					<tr>
+						<td><a href="http://www.eldora.com/mountain.trail.html">Eldora</a></td>
+						<td>Nederland</td>
+						<td>CO</td> 
+						<td>53</td> 
+						<td>10800</td> 
+					</tr>
+
+					<tr>
+						<td><a href="http://www.skiheavenly.com/the-mountain/trail-map.aspx">Heavenly</a></td>
+						<td>Tahoe</td>
+						<td>CA</td> 
+						<td>97</td> 
+						<td>10067</td> 
+					</tr>
+					
+					<tr>
+						<td><a href="http://www.kirkwood.com/mountain/trail%20map.aspx">Kirkwood</a></td>
+						<td>Tahoe</td>
+						<td>CA</td> 
+						<td>22</td> 
+						<td>9800</td> 
+					</tr>
+
+				</table>
+				</div>
+				
+				<div id="mtbstory">
+				<p class="story">
+				I began riding mountain bikes in my late teens.  I grew up in Nebraska so most of my riding 
+				was near riparian trails.  There was some singletrack, but most of it was through flowing packed
+				dirt trails surrounded by lush, humid, deciduous forests.
+				<br>
+				College led me out to Boulder, Colorado.  During my six years out in Colorado I had the pleasure of
+				exploring a great deal of trails up near the peak to peak highway.  Most of the trails
+				consisted of technical singletrack with a lot of switch backs and jutting rocks.  
+				<br>
+				After Colorado I moved to California near Marin County, the birthplace of Mountain Biking.  I have
+				taken the opportunity to ride several trails around the area ranging from non-technical double 
+				loops like Angel Island to the last legal singletrack in China Camp State Park.
+				</p>
+				</div>
+
+				<div id="sbstory">
+				<p class="story">
+				I started out snowboarding when I was 23 after a couple of years skiing.  I began after I moved
+				to Colorado.  My first real experience on a board was at Breckenridge in Summit County.  I quickly
+				grew to love the outdoor sport.  I would make it a regular routine to hit the local resort al Eldora
+				near my hometown in Nederland.
+				<br>
+				After moving out to California I was able to experience the wet snow of the Sierra Nevada Mountain
+				range.  I began with a trip to Heavenly resort which had a lot of nice long blue(intermediate) runs.
+				I soon found myself seeking out more technical runs in a mountain called Kirkwood.
+				</p>
+				</div>
+				
+				<div id="benhinkley">
+				<div class="benstory">
+				Remembering 
+				<br>
+				<b>Ben Hinkley</b>: 
+				<br>
+				the greatest snowboarder I ever called a friend
+				<br>
+				
+				<nav id="nav">
+					<ul>					
+						<li><a href="http://xgames.espn.go.com/xgames/video/14949975/ben-hinkley-signature-lawn-dart">XGames</a></li>
+						<li><a href="http://snowboardingnews.net/2016/ben-hinkley-in-rememberance/">Snowboarding News</a></li>
+						<li><a href="http://snowboardmag.com/stories/ben-hinkley-in-rememberance">Snowboarder Mag</a></li>
+				    </ul>
+				</nav>
+				</div>
+				</div>
+				
+				<div id="mtbikepic">
+				<img src="img/mtbike2.jpeg" width="274" height="184" alt="MtBike">
+				</div>
+				
+                <div id="snowboardpic">
+				<img src="img/snowboard.jpeg" width="275" height="183" alt="SnowBoard">
+				</div>
+
+				<div id="benhinkleypic">
+				<img src="img/ben_hinkley_scale.jpg" width="199" height="200" alt="Ben Hinkley">
+				</div>
+
+				
+	</div>
+
+	<div id="footer">
 	<footer>
 		
 		<a href="http://validator.w3.org/check?uri=referer">
@@ -44,7 +206,14 @@ body {
 				alt="HTML5">
 		</a>
 
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        	<img style="border:0;width:88px;height:31px"
+            	src="http://jigsaw.w3.org/css-validator/images/vcss"
+            	alt="Valid CSS!" />
+        </a>
+
 	</footer>
+	</div>
 
 
 
