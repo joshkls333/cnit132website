@@ -1,0 +1,79 @@
+/**********
+XML Style Sheet for CNIT 132
+Created by: Josh Klaus
+Email: jklaus1@mail.ccsf.edu
+**********/
+
+
+parksvisited {
+	background-color: #4E7B2E;  
+ 	padding: 5px; 
+ 	margin-left: 0px;
+}
+
+/* header style  */
+
+title {
+	display: block; 
+	font-size: 22pt; 
+	color: black; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif; 
+	margin-top: 10pt; 
+	margin-left: 5pt;
+	width: 400px; 
+	padding: 3px;
+}
+
+/* message style */
+
+message {
+	display: block; 
+	width: 300pt; 
+	color: yellow; 
+	font-style: italic;
+	border-bottom: 1pt solid black; 
+	padding-bottom: 15pt;
+	margin-left: 10pt; 
+	margin-top: 10pt;
+}
+
+
+park {
+	display: block; 
+	font-size: 14pt; 
+	color: #DE8208; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif; 
+	margin-top: 20pt; 
+	margin-left: 20pt;}
+
+
+state {
+	display: list-item; 
+	font-size: 13pt; 
+	color: black; 
+	font-family: times new roman, times, serif; 
+	margin-left: 16pt;}
+
+
+established {
+	display: list-item; 
+	color: black; 
+	font-size: 12pt; 
+	font-family: times new roman, times, serif;
+	margin-left: 16pt;}
+
+
+visited {
+	display: list-item; 
+	color: black; 
+	font-size: 12pt; 
+	font-family: times new roman, times, serif;
+	margin-left: 16pt;}
+
+area {
+	display: list-item; 
+	font-size: 12pt;
+ 	font-family: times new roman, times, serif; 
+ 	margin-left: 19pt;}

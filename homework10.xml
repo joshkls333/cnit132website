@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/css" href="npsstyle.css" ?>
+<!-- This document contains information about National Parks I have visited -->
+
+<parksvisited>
+<title>National Parks</title>
+<message>
+<![CDATA[
+   Included are all the National Parks I have visited.
+]]>
+</message>
+ 
+   <park>Park Name
+       <state>State</state> 
+       <established>Year Established</established>
+       <visited>Year First Visited</visited> 
+       <area>Area in acres</area>
+   </park>
+
+   <park>Yellowstone
+       <state>Wyoming</state> 
+       <established>1872</established>
+       <visited>1995</visited> 
+       <area>2,219,790</area>
+   </park>
+
+   <park>Yosemite
+       <state>California</state> 
+       <established>1890</established>
+       <visited>2003</visited> 
+       <area>761,266</area>
+   </park>
+
+   <park>Rocky Mountain
+       <state>Colorado</state> 
+       <established>1915</established>
+       <visited>1991</visited> 
+       <area>265,828</area>
+   </park>
+
+   <park>Redwood
+       <state>California</state> 
+       <established>1968</established>
+       <visited>2003</visited> 
+       <area>112,512</area>
+   </park>
+
+   <park>Mesa Verde
+       <state>Colorado</state> 
+       <established>1906</established>
+       <visited>1985</visited> 
+       <area>52,121</area>
+   </park>
+
+   <park>Lassen Volcanic
+       <state>California</state> 
+       <established>1916</established>
+       <visited>2003</visited> 
+       <area>106,372</area>
+   </park>
+
+   <park>Arches
+       <state>Utah</state> 
+       <established>1929</established>
+       <visited>1999</visited> 
+       <area>76,518</area>
+   </park>
+
+   <park>Badlands
+       <state>South Dakota</state> 
+       <established>1978</established>
+       <visited>1996</visited> 
+       <area>242,755</area>
+   </park>
+
+   <park>Grand Teton
+       <state>Wyoming</state> 
+       <established>1929</established>
+       <visited>1996</visited> 
+       <area>309,994</area>
+   </park>
+
+   <park>Great Sand Dunes
+       <state>Colorado</state> 
+       <established>2004</established>
+       <visited>1998</visited> 
+       <area>42,983</area>
+   </park>
+
+</parksvisited>
